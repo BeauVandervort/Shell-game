@@ -28,6 +28,7 @@ button1.addEventListener('click', () => {
     } else {
         img3.classList.add('reveal');
     }
+    displayResults();
 });
 
 button2.addEventListener('click', () => {
@@ -42,6 +43,7 @@ button2.addEventListener('click', () => {
     } else {
         img3.classList.add('reveal');
     }
+    displayResults();
 });
 
 button3.addEventListener('click', () => {
@@ -56,6 +58,7 @@ button3.addEventListener('click', () => {
         wins++;
         img3.classList.add('reveal');
     }
+    displayResults();
 });
 
 function resetPearls() {
