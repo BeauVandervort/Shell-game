@@ -20,7 +20,6 @@ button1.addEventListener('click', () => {
     total++;
     resetPearls();
     const pearlLocation = Math.ceil(Math.random() * 3);
-    console.log('pearlLocation', pearlLocation);
     if (pearlLocation === 1) {
         wins++;
         img1.classList.add('reveal');
@@ -35,7 +34,6 @@ button2.addEventListener('click', () => {
     total++;
     resetPearls();
     const pearlLocation = Math.ceil(Math.random() * 3);
-    console.log('pearlLocation', pearlLocation);
     if (pearlLocation === 1) {
         img1.classList.add('reveal');
     } else if (pearlLocation === 2) {
@@ -50,7 +48,6 @@ button3.addEventListener('click', () => {
     total++;
     resetPearls();
     const pearlLocation = Math.ceil(Math.random() * 3);
-    console.log('pearlLocation', pearlLocation);
     if (pearlLocation === 1) {
         img1.classList.add('reveal');
     } else if (pearlLocation === 2) {
