@@ -55,6 +55,8 @@ main {
     background-color: aqua;
     border-radius: 50%;
     box-shadow: 5px -2px 5px chocolate;
+    position: absolute;
+    top: 80px;
 }
 
 .stat {
