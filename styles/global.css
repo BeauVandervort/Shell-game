@@ -33,3 +33,29 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.shell img {
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    z-index: 20;
+}
+
+.reveal {
+    transform: translateY(-100px);
+}
+
+.pearl {
+    z-index: 10;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: aqua;
+    border-radius: 50%;
+    box-shadow: 5px -2px 5px chocolate;
+    margin: 10px;
+    top: 65px;
+}
+
+.stat {
+    padding-right: 5rem;
+}
