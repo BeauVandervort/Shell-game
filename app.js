@@ -2,6 +2,8 @@
 
 /* Get DOM Elements */
 const button1 = document.getElementById('button-1');
+const button2 = document.getElementById('button-2');
+const button3 = document.getElementById('button-3');
 const img1 = document.querySelector('#img-1');
 const img2 = document.querySelector('#img-2');
 const img3 = document.querySelector('#img-3');
@@ -20,10 +22,41 @@ button1.addEventListener('click', () => {
     const pearlLocation = Math.ceil(Math.random() * 3);
     console.log('pearlLocation', pearlLocation);
     if (pearlLocation === 1) {
+        wins++;
         img1.classList.add('reveal');
     } else if (pearlLocation === 2) {
         img2.classList.add('reveal');
     } else {
+        img3.classList.add('reveal');
+    }
+});
+
+button2.addEventListener('click', () => {
+    total++;
+    resetPearls();
+    const pearlLocation = Math.ceil(Math.random() * 3);
+    console.log('pearlLocation', pearlLocation);
+    if (pearlLocation === 1) {
+        img1.classList.add('reveal');
+    } else if (pearlLocation === 2) {
+        wins++;
+        img2.classList.add('reveal');
+    } else {
+        img3.classList.add('reveal');
+    }
+});
+
+button3.addEventListener('click', () => {
+    total++;
+    resetPearls();
+    const pearlLocation = Math.ceil(Math.random() * 3);
+    console.log('pearlLocation', pearlLocation);
+    if (pearlLocation === 1) {
+        img1.classList.add('reveal');
+    } else if (pearlLocation === 2) {
+        img2.classList.add('reveal');
+    } else {
+        wins++;
         img3.classList.add('reveal');
     }
 });
